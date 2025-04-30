@@ -1,7 +1,7 @@
 #Copied from https://github.com/dacort/metabase-athena-driver/blob/d7572cd99551ea998a011f8f00a1e39c1eaa59b8/Dockerfile
-ARG METABASE_VERSION=v0.52.9
+ARG METABASE_VERSION=v0.54.5
 
-FROM clojure:openjdk-11-tools-deps-slim-buster AS stg_base
+FROM clojure:tools-deps-bookworm-slim AS stg_base
 
 # Reequirements for building the driver
 RUN apt-get update && \
